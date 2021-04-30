@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cheat Sheet</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="page">
+  <article>
+    <h1>React Router Cheat Sheet</h1>
+    <section>
+      <h2>初始化 - 使用 Router + History</h2>
+      <textarea spellcheck="false">
+      import {Router, Route, Switch} from 'react-router';
+      import {createHashHistory} from 'history';
+      const history = createHashHistory();
+      // 可以把 history 移到 ./shared/history.js
+
+      function App() {
+        return (
+          <Router history={history}>
+            <Switch>
+              <Route exact path="/">
+                <Home/>
+              </Route>
+            </Switch>
+          </Router>
+        );
+      }
+    </textarea>
+    </section>
+  </article>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
