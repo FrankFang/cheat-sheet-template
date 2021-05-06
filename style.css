@@ -12,6 +12,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  padding: calc(var(--gutter) * 2);
 }
 textarea {resize: none;width: 100%; display: block; overflow: hidden;
   font-family: "JetBrains Mono", Consolas, monospace; padding: var(--gutter);
